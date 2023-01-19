@@ -12,8 +12,8 @@
         <div class="col-12">
           <p class=" col-12 m-0 fw-600">Region: <span class="fw-300">{{country.region}}</span></p>
         </div>
-        <div class="col-12">
-          <p *ngIf="country.capital" class=" col-12 m-0 fw-600">Capital: <span class="fw-300">{{country.capital}}</span></p>
+        <div *ngIf="country.capital" class="col-12">
+          <p class="col-12 m-0 fw-600">Capital: <span class="fw-300">{{country.capital}}</span></p>
         </div>
       </div>
     </div>
