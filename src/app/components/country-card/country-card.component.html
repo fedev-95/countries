@@ -1,0 +1,21 @@
+<a *ngIf="country" class="theme-element text-decoration-none rounded-2 country-card overflow-hidden" routerLink="/country-details/{{country.name.common}}">
+  <div>
+    <div class="img-container d-flex">
+      <img src="{{country.flags.png}}" class="theme-element img-fluid object-fit-cover flex-grow-1" alt="{{country.name.common}} flag.">
+    </div>
+    <div class="p-4 pb-5 fs-14">
+      <h5 class="pb-3 m-0 fw-800">{{country.name.common}}</h5>
+      <div class="row gy-2">
+        <div class="col-12">
+          <p class=" col-12 m-0 fw-600">Population: <span class="fw-300">{{country.population | number}}</span></p>
+        </div>
+        <div class="col-12">
+          <p class=" col-12 m-0 fw-600">Region: <span class="fw-300">{{country.region}}</span></p>
+        </div>
+        <div class="col-12">
+          <p class=" col-12 m-0 fw-600">Capital: <span class="fw-300">{{country.capital}}</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</a>
