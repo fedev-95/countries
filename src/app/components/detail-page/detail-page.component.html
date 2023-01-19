@@ -40,13 +40,13 @@
                   <p class="my-2 text-wrap fs-16 fw-600">Population: <span class="fw-300">{{country.population |
                       number}}</span></p>
                   <p class="my-2 text-wrap fs-16 fw-600">Region: <span class="fw-300">{{country.region}}</span></p>
-                  <p class="my-2 text-wrap fs-16 fw-600">Sub Region: <span class="fw-300">{{country.subregion}}</span></p>
-                  <p class="my-2 text-wrap fs-16 fw-600">Capital: <span class="fw-300">{{country.capital}}</span></p>
+                  <p *ngIf="country.subregion" class="my-2 text-wrap fs-16 fw-600">Sub Region: <span class="fw-300">{{country.subregion}}</span></p>
+                  <p *ngIf="country.capital" class="my-2 text-wrap fs-16 fw-600">Capital: <span class="fw-300">{{country.capital}}</span></p>
                 </div>
                 <div class="col-sm-auto col-lg-6">
-                  <p class="my-2 text-wrap fs-16 fw-600">Top Level Domain: <span class="fw-300">{{tld}}</span></p>
-                  <p class="my-2 text-wrap fs-16 fw-600">Currencies: <span class="fw-300">{{currencies}}</span></p>
-                  <p class="my-2 text-wrap fs-16 fw-600">Languages: <span class="fw-300">{{languages}}</span></p>
+                  <p *ngIf="tld" class="my-2 text-wrap fs-16 fw-600">Top Level Domain: <span class="fw-300">{{tld}}</span></p>
+                  <p *ngIf="currencies" class="my-2 text-wrap fs-16 fw-600">Currencies: <span class="fw-300">{{currencies}}</span></p>
+                  <p *ngIf="languages" class="my-2 text-wrap fs-16 fw-600">Languages: <span class="fw-300">{{languages}}</span></p>
                 </div>
               </div>
             </div>

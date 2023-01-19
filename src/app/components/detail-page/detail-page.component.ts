@@ -38,7 +38,6 @@ export class DetailPageComponent implements OnInit, OnDestroy {
   currencies: string | undefined;
   languages: string | undefined;
   tld: string | undefined;
-  nativeName: string | undefined;
   _countrySubscription: Subscription = new Subscription();
 
   ngOnInit(): void {
@@ -76,7 +75,6 @@ export class DetailPageComponent implements OnInit, OnDestroy {
   }
 
   transformData(country: Country): void {
-    this.nativeName
     if (country.currencies) {
       this.currencies = Object.values(Object.values(country.currencies).map(x => x.name)).join(', ');
     }
