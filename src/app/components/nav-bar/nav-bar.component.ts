@@ -22,14 +22,14 @@ export class NavBarComponent implements OnInit, OnDestroy {
     this.setDarkModeSubscription();
   }
   
-  switchTheme(req?: boolean) {
-    this._stateService.toggleTheme(req);
+  toggleTheme() {
+    this._stateService.toggleTheme(true);
   }
   
   setDarkModeSubscription(): void {
     this.darkModeSubscription = this._stateService.darkMode$.subscribe({
-      next: (res: string) => {
-        if (res === 'true') {
+      next: (res: boolean) => {
+        if (res) {
           this.darkMode$ = true;
         } else {
           this.darkMode$ = false;
