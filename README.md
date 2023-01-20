@@ -44,8 +44,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/fedev-95/countries)
-- Live Site URL: [Add live site URL here](https://whereintheworld-1.web.app)
+- Firebase Live Site URL: [Where in the world?](https://whereintheworld-1.web.app)
 
 ## My process
 
