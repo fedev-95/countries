@@ -5,7 +5,6 @@ import { StateService } from 'src/app/services/state.service';
 import { CountriesService } from 'src/app/services/countries.service';
 import { RouterModule } from '@angular/router';
 import { Country } from 'src/app/models/countries.model';
-import { outputAst } from '@angular/compiler';
 
 @Component({
   selector: 'app-border-country',
