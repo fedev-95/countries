@@ -1,9 +1,9 @@
 <a *ngIf="country" class="theme-element text-decoration-none rounded-2 country-card overflow-hidden" routerLink="/country-details/{{country.name.common}}">
   <div>
     <div class="img-container d-flex">
-      <img src="{{country.flags.png}}" class="theme-element img-fluid object-fit-cover flex-grow-1" alt="{{country.name.common}} flag.">
+      <img src="{{country.flags.png}}" class="img-fluid object-fit-cover flex-grow-1" alt="{{country.name.common}} flag.">
     </div>
-    <div class="p-4 pb-5 fs-14">
+    <div class="position-relative z-1 p-4 pb-5 fs-14">
       <h5 class="pb-3 m-0 fw-800">{{country.name.common}}</h5>
       <div class="row gy-2">
         <div class="col-12">
