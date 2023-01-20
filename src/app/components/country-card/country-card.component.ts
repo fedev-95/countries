@@ -3,15 +3,12 @@ import { CommonModule } from '@angular/common';
 import { Country } from 'src/app/models/countries.model';
 import { RouterModule } from '@angular/router';
 
-import { NgOptimizedImage } from '@angular/common'
-
 @Component({
   selector: 'app-country-card',
   standalone: true,
   imports: [
     CommonModule,
-    RouterModule,
-    NgOptimizedImage
+    RouterModule
   ],
   templateUrl: './country-card.component.html',
   styleUrls: ['./country-card.component.css'],
