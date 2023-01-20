@@ -44,7 +44,7 @@ Users should be able to:
 
 ### Links
 
-- Firebase Live Site URL: [Where in the world?](https://whereintheworld-1.web.app)
+- Firebase Live Site URL: [https://whereintheworld-1.web.app](https://whereintheworld-1.web.app)
 
 ## My process
 
