@@ -18,9 +18,10 @@ import { StateService } from './services/state.service';
 export class AppComponent implements OnInit {
 
   _stateService = inject(StateService);
+  darkMode: boolean = localStorage.getItem('darkMode') === 'true'? true : false;
   
   ngOnInit(): void {
-    if (localStorage.getItem('darkMode') === 'true') {
+    if (this.darkMode) {
       this._stateService.toggleTheme();
     }
   }
