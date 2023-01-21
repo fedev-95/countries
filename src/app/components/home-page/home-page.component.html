@@ -5,8 +5,8 @@
 
       <div class="col-12 col-md-6 col-lg-5 col-xl-4">
         <label for="search" class="theme-element d-flex rounded-2 border-0 py-3">
-          <i class="bi bi-search px-4"></i>
-          <input id="search" [formControl]="searchTerm" class="theme-input border-0 fs-14 fw-600" type="search" placeholder="Search for a country...">
+          <i class="bi bi-search ps-4"></i>
+          <input id="search" [formControl]="searchTerm" class="theme-input border-0 w-100 fs-14 fw-600 mx-4" type="search" placeholder="Search for a country...">
         </label>
       </div>
 
@@ -17,13 +17,13 @@
             {{regionFilter? regionFilter : 'Filter by Region'}}
           </button>
           <div class="theme-element border-0 p-0 py-2 mt-2 dropdown-menu dropdown-menu-md-end fw-600 fs-14">
-            <p class="m-0 px-4 py-1 w-100" role="button" (click)="getAllCountries()">None</p>
-            <p class="m-0 px-4 py-1 w-100" role="button" (click)="getByRegion('Africa')">Africa</p>
-            <p class="m-0 px-4 py-1 w-100" role="button" (click)="getByRegion('Americas')">Americas</p>
-            <p class="m-0 px-4 py-1 w-100" role="button" (click)="getByRegion('Antarctic')">Antarctic</p>
-            <p class="m-0 px-4 py-1 w-100" role="button" (click)="getByRegion('Asia')">Asia</p>
-            <p class="m-0 px-4 py-1 w-100" role="button" (click)="getByRegion('Europe')">Europe</p>
-            <p class="m-0 px-4 py-1 w-100" role="button" (click)="getByRegion('Oceania')">Oceania</p>
+            <button class="transparent fw-600 text-start border-0 m-0 px-4 py-1 w-100" (click)="getAllCountries()">None</button>
+            <button class="transparent fw-600 text-start border-0 m-0 px-4 py-1 w-100" (click)="getByRegion('Africa')">Africa</button>
+            <button class="transparent fw-600 text-start border-0 m-0 px-4 py-1 w-100" (click)="getByRegion('Americas')">Americas</button>
+            <button class="transparent fw-600 text-start border-0 m-0 px-4 py-1 w-100" (click)="getByRegion('Antarctic')">Antarctic</button>
+            <button class="transparent fw-600 text-start border-0 m-0 px-4 py-1 w-100" (click)="getByRegion('Asia')">Asia</button>
+            <button class="transparent fw-600 text-start border-0 m-0 px-4 py-1 w-100" (click)="getByRegion('Europe')">Europe</button>
+            <button class="transparent fw-600 text-start border-0 m-0 px-4 py-1 w-100" (click)="getByRegion('Oceania')">Oceania</button>
           </div>
         </div>
       </div>
