@@ -2,14 +2,10 @@
   <div class="container">
     <div class="d-flex align-items-center justify-content-between">
       <h4 class="m-0 fw-800">Where in the world?</h4>
-      <div class="d-flex row gx-2" role="button" (click)="toggleTheme()">
-        <div class="col-auto">
-          <i [ngClass]="darkMode$? 'bi bi-moon-fill' : 'bi bi-moon'"></i>
-        </div>
-        <div class="col-auto">
-          <p class="m-0 fw-600">Dark Mode</p>
-        </div>
-      </div>
+      <button style="background-color: transparent;" class="theme-text border-0 fw-600 p-0" (click)="toggleTheme()">
+        <i [ngClass]="darkMode$? 'bi bi-moon-fill' : 'bi bi-moon'" class="me-1"></i>
+        Dark Mode
+      </button>
     </div>
   </div>
 </nav>

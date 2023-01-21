@@ -22,19 +22,16 @@ body.dark-theme {
 
 .theme-text {
   color: var(--text-color);
-  transition: 0.5s ease;
 }
 
 .theme-bg {
   background-color: var(--bg-color);
   color: var(--text-color);
-  transition: 0.5s ease;
 }
 
 .theme-element {
   background-color: var(--element-color);
   color: var(--text-color);
-  transition: 0.5s ease;
 
   -webkit-box-shadow: 0px 0px 10px -1px var(--shadow-color);
   -moz-box-shadow: 0px 0px 10px -1px var(--shadow-color);
@@ -43,12 +40,10 @@ body.dark-theme {
 
 .theme-input {
   color: var(--input);
-  transition: 0.5s ease;
 }
 
 .theme-input::placeholder {
   color: var(--input);
-  transition: 0.5s ease;
 }
 
 .dropdown-menu p:hover {
