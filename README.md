@@ -47,6 +47,7 @@ Users should be able to:
 
 - Angular 15
 - Standalone Components
+- Angular Routing
 - Lazy Loading
 - Bootstrap
 - CSS custom properties
@@ -55,8 +56,10 @@ Users should be able to:
 ### Continued development
 
 - RXJS / Observables
-- Angular Routing
 - Change Detection
+- Virtual Scrolling
+- Angular Routing
+- Angular Material
 
 ## Author
 
