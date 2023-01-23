@@ -1,7 +1,7 @@
 <a tabindex="0" *ngIf="country" class="theme-element text-decoration-none rounded-2 country-card overflow-hidden flex-grow-1" routerLink="/country-details/{{country.name.common}}">
   <div>
-    <div class="img-container d-flex">
-      <img src="{{country.flags.png}}" class="img-fluid object-fit-cover flex-grow-1" alt="{{country.name.common}} flag.">
+    <div class="img-container d-flex position-relative">
+      <img ngSrc="{{country.flags.png}}" class="img-fluid object-fit-cover flex-grow-1" alt="{{country.name.common}} flag." fill>
     </div>
     <div class="position-relative z-1 p-4 pb-5 fs-14">
       <h5 class="pb-3 m-0 fw-800">{{country.name.common}}</h5>
