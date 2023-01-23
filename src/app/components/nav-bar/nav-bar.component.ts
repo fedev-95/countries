@@ -1,7 +1,6 @@
-import { Component, inject, OnDestroy, OnInit } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { StateService } from 'src/app/services/state.service';
-import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-nav-bar',
@@ -12,34 +11,13 @@ import { Subscription } from 'rxjs';
   templateUrl: './nav-bar.component.html',
   styleUrls: ['./nav-bar.component.css']
 })
-export class NavBarComponent implements OnInit, OnDestroy {
+export class NavBarComponent {
   
   _stateService = inject(StateService);
-  darkModeSubscription: Subscription = new Subscription();
-  darkMode$: boolean | undefined;
-  
-  ngOnInit(): void {
-    this.setDarkModeSubscription();
-  }
+  darkMode$ = this._stateService.darkMode$;
   
   toggleTheme() {
     this._stateService.toggleTheme(true);
-  }
-  
-  setDarkModeSubscription(): void {
-    this.darkModeSubscription = this._stateService.darkMode$.subscribe({
-      next: (res: boolean) => {
-        if (res) {
-          this.darkMode$ = true;
-        } else {
-          this.darkMode$ = false;
-        }
-      }
-    });
-  }
-  
-  ngOnDestroy(): void {
-    this.darkModeSubscription.unsubscribe();
   }
 
 }

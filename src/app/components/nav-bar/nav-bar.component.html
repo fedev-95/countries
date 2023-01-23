@@ -3,7 +3,7 @@
     <div class="d-flex align-items-center justify-content-between">
       <h4 class="m-0 fw-800">Where in the world?</h4>
       <button style="background-color: transparent;" class="theme-text border-0 fw-600 p-0" (click)="toggleTheme()">
-        <i [ngClass]="darkMode$? 'bi bi-moon-fill' : 'bi bi-moon'" class="me-1"></i>
+        <i [ngClass]="(darkMode$ | async)? 'bi bi-moon-fill' : 'bi bi-moon'" class="me-1"></i>
         Dark Mode
       </button>
     </div>

@@ -20,7 +20,9 @@ export class StateService {
       localStorage.setItem('darkMode', 'true');
       this.darkMode.next(true);
     }
+
     document.body.classList.toggle('dark-theme');
+    
   }
 
 }
