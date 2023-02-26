@@ -39,7 +39,7 @@ Users should be able to:
 
 ### Links
 
-- Firebase Live Site URL: [https://whereintheworld-1.web.app](https://whereintheworld-1.web.app)
+- Live Site URL: [https://whereintheworld-1.web.app](https://whereintheworld-1.web.app)
 
 ## My process
 
@@ -52,14 +52,6 @@ Users should be able to:
 - Bootstrap
 - CSS custom properties
 - Flexbox
-
-### Continued development
-
-- RXJS / Observables
-- Change Detection
-- Virtual Scrolling
-- Angular Routing
-- Angular Material
 
 ## Author
 
