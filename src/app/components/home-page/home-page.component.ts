@@ -52,7 +52,7 @@ export class HomePageComponent implements OnInit, OnDestroy {
   }
 
   searchTermChange() {
-    this.countriesSubscription = this.searchTerm.valueChanges.pipe(debounceTime(1000)).subscribe( param => {
+    this.countriesSubscription = this.searchTerm.valueChanges.pipe(debounceTime(500)).subscribe( param => {
       if (param) {
         this.searchByName(param);
       } else {
