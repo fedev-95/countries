@@ -51,6 +51,7 @@ Users should be able to:
 - Bootstrap
 - CSS custom properties
 - Flexbox
+- [REST Countries API](https://restcountries.com)
 
 ## Author
 
