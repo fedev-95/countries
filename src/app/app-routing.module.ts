@@ -13,7 +13,7 @@ export const routes: Routes = [
     title: 'Where in the world?'
   },
   {
-    path: 'country-details/:country',
+    path: 'details/:country',
     loadComponent: () => import('./components/detail-page/detail-page.component').then(c => c.DetailPageComponent),
     title: 'Details'
   },
