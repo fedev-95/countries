@@ -8,9 +8,7 @@ This is a solution to the [REST Countries API with color theme switcher challeng
   - [The challenge](#the-challenge)
   - [Screenshots](#screenshots)
   - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-- [Author](#author)
+- [Built with](#built-with)
 
 ## Overview
 
@@ -40,9 +38,7 @@ Users should be able to:
 
 - Live Site URL: [https://where-in-the-world-23.web.app](https://where-in-the-world-23.web.app)
 
-## My process
-
-### Built with
+## Built with
 
 - Angular 15
 - Standalone Components
@@ -52,7 +48,3 @@ Users should be able to:
 - CSS custom properties
 - Flexbox
 - [REST Countries API](https://restcountries.com)
-
-## Author
-
-- Frontend Mentor - [@altoPancho](https://www.frontendmentor.io/profile/altoPancho)
