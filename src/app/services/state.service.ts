@@ -13,6 +13,11 @@ export class StateService {
 
     let localSetting: string | null = localStorage.getItem('darkMode');
 
+    if (localSetting != 'true' && localSetting != 'false') {
+      localStorage.setItem('darkMode', 'true');
+      this.darkMode.next(true);
+    }
+
     if (localSetting === 'true' && setFalse) {
       localStorage.setItem('darkMode', 'false');
       this.darkMode.next(false);
